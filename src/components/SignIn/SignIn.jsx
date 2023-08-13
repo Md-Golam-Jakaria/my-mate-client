@@ -17,12 +17,12 @@ const SignIn = () => {
                 <h3 className="capitalize font-bold text-4xl">Welcome Back</h3>
                 <p className="font-samibold text-2xl">World number #1 matrimony site</p>
             </div>
-            <div className="login-form w-3/4 mx-auto grid grid-cols-2 my-10">
-                <div className="image-full bg-[#FFC5B2]  rounded-l-2xl " >
+            <div className="login-form md:w-3/4 mx-auto grid md:grid-cols-2 grid-cols-1 md:my-10">
+                <div className="image-full bg-[#FFC5B2] md:rounded-l-2xl " >
                     <img src="../../../src/assets/images/login-page-image.png" alt="" />
                 </div>
-                <div className="bg-violet-200 flex justify-center items-center rounded-r-2xl ">
-                    <div className="w-3/4">
+                <div className="bg-violet-200 flex justify-center items-center md:rounded-r-2xl pt-5 pb-10">
+                    <div className="md:w-3/4 w-5/6">
                         <h3 className="font-bold text-2xl mb-8 ">We always love to see you</h3>
                         <form className="text-left " onSubmit={handleSubmit(onSubmit)}>
                             <div className="my-2">

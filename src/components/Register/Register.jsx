@@ -13,16 +13,16 @@ const Register = () => {
 
     return (
         <div className="text-center">
-            <div className="my-12">
-                <h3 className="capitalize font-bold text-4xl">Create your Account</h3>
-                <p className="font-samibold text-2xl">Create account and find your mate with us!</p>
+            <div className="my-5 md:my-12">
+                <h3 className="capitalize font-bold text-3xl md:text-4xl">Create your Account</h3>
+                <p className="font-samibold text-xl md:text-2xl">Create account and find your mate with us!</p>
             </div>
-            <div className="register-form w-3/4 mx-auto grid grid-cols-2 mb-20">
-                <div className="image-full bg-[#FFC5B2]  rounded-l-2xl " >
+            <div className="register-form md:w-3/4 mx-auto grid md:grid-cols-2 md:mb-20">
+                <div className="image-full bg-[#FFC5B2]  md:rounded-l-2xl " >
                     <img className="h-full" src="../../../src/assets/images/register-page-image.png" alt="" />
                 </div>
-                <div className="bg-violet-200 flex justify-center items-center rounded-r-2xl py-10">
-                    <div className="w-3/4">
+                <div className="bg-violet-200 flex justify-center items-center md:rounded-r-2xl py-10">
+                    <div className="md:w-3/4 w-5/6">
                         <h3 className="font-bold text-2xl mb-8 ">We always love to see you</h3>
                         <form className="text-left " onSubmit={handleSubmit(onSubmit)}>
                             <div className="my-1">
@@ -38,7 +38,7 @@ const Register = () => {
                                 {errors.owner && <span className="text-red-500" >Owner is required!</span>}
                             </div>
 
-                            <div className="flex gap-3">
+                            <div className="md:flex gap-3">
                                 <div className="my-1">
                                     <label className="text-xl font-semibold"><span className="text-slate-600 text-lg">*</span> First Name:</label>
                                     <input className="input input-bordered w-full my-1" {...register("firstName", { required: true })} />
@@ -76,7 +76,7 @@ const Register = () => {
                                     {errors.date && <span className="text-red-500" > Date is required!</span>}
                                 </div>
                             </div>
-                            <div className="flex gap-3">
+                            <div className="md:flex gap-3">
                                 <div className="my-1">
                                     <label className="text-xl font-semibold"><span className="text-slate-600 text-lg">*</span>Country:</label>
                                     <select className="input input-bordered w-full my-2" {...register("country", { required: true })}>
@@ -91,7 +91,7 @@ const Register = () => {
                                     <input className="input input-bordered w-full my-2" {...register("referral")} />
                                 </div>
                             </div>
-                            <div className="flex gap-3">
+                            <div className="md:flex gap-3">
                                 <div className="my-1">
                                     <label className="text-xl font-semibold"><span className="text-slate-600 text-lg">*</span>Password:</label>
                                     <input type="password" className="input input-bordered w-full my-2" {...register("password", { required: true })} />
