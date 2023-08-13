@@ -5,26 +5,26 @@ const ContactUs = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
     return (
-        <div className=" my-20 w-3/4 mx-auto ">
-            <div className="text-center w-2/4 mx-auto">
+        <div className=" md:my-20 md:w-3/4 mx-auto ">
+            <div className="text-center md:w-2/4 px-10 mx-auto">
                 <h1 className="text-4xl font-bold">How we can help you</h1>
                 <p className="text-lg mt-4" >Fill out the form and a member from our team will get back to you with 24 hours, of here more way to get in touch</p>
             </div>
-            <div className="flex justify-around items-start mt-10">
-                <div>
-                    <div className="mt-12">
+            <div className="md:flex justify-around items-start my-5 md:px-10 ">
+                <div className="px-10">
+                    <div className="md:my-12 my-5">
                         <FaWhatsapp className="text-4xl p-2 text-[#FA4A6F] bg-[#FCE0ED] rounded-full" />
                         <h4 className="font-semibold mt-2">Chat us on Whatsapp:</h4>
                         <p>Mon-Fri from 8:00 am to 5:00pm</p>
                         <h4 className="font-semibold mt-2">+00 123 4567</h4>
                     </div>
-                    <div className="mt-12">
+                    <div className="md:my-12 my-5">
                         <FaWhatsapp className="text-4xl p-2 text-[#FA4A6F] bg-[#FCE0ED] rounded-full" />
                         <h4 className="font-semibold mt-2">Chat us on Whatsapp:</h4>
                         <p>Mon-Fri from 8:00 am to 5:00pm</p>
                         <h4 className="font-semibold mt-2">+00 123 4567</h4>
                     </div>
-                    <div className="mt-12">
+                    <div className="md:my-12 my-5">
                         <FaWhatsapp className="text-4xl p-2 text-[#FA4A6F] bg-[#FCE0ED] rounded-full" />
                         <h4 className="font-semibold mt-2">Chat us on Whatsapp:</h4>
                         <p>Mon-Fri from 8:00 am to 5:00pm</p>
