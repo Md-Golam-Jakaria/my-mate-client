@@ -1,0 +1,6 @@
+.banner-background {
+    background-image: url(../../assets/images/bgimage.png), linear-gradient(to top, #23273A, #FA4A6F);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+}
