@@ -1,14 +1,22 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Autoplay } from 'swiper/modules';
 import "./SuccessStoryBanner.css"
 
 
 
 const SuccessStoryBanner = () => {
+
     return (
-        <div className=" banner-background  text-white p-20 rounded-3xl">
+        <div className=" banner-background  text-white m-20  p-20 rounded-3xl">
             <div className="grid grid-cols-2 gap-20">
                 <div>
                     <h1 className="text-4xl font-bold my-2" >We have thousands of success stories</h1>
@@ -19,11 +27,13 @@ const SuccessStoryBanner = () => {
                     <Swiper
                         slidesPerView={3}
                         spaceBetween={30}
-                        pagination={{
-                            clickable: true,
+                        freeMode={true}
+                        loop={true}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
                         }}
-                        modules={[]}
-                        className="mySwiper"
+                        modules={[Autoplay]}
                     >
                         <SwiperSlide>
                             <img src="../../../src/assets/images/slider4.png" alt="" />
@@ -45,14 +55,15 @@ const SuccessStoryBanner = () => {
                         </SwiperSlide>
                     </Swiper>
                     <Swiper
-
                         slidesPerView={3}
                         spaceBetween={30}
-                        pagination={{
-                            clickable: true,
+                        freeMode={true}
+                        loop={true}
+                        autoplay={{
+                            delay: 2100,
+                            disableOnInteraction: false,
                         }}
-                        modules={[]}
-                        className="mySwiper"
+                        modules={[Autoplay]}
                     >
                         <SwiperSlide>
                             <img src="../../../src/assets/images/slider1.png" alt="" />
