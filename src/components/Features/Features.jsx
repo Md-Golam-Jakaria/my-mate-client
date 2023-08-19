@@ -3,7 +3,7 @@ import { FaKey, FaNotesMedical, FaShieldAlt } from 'react-icons/fa';
 import "./Features.css"
 const Features = () => {
     return (
-        <div className='py-20 bg-slate-100'>
+        <div className='py-20'>
             <h2 className='font-semibold text-3xl text-center md:w-2/4 mx-auto mb-12 ' >Lorem dolor amet consectetur adipiscing. Commode acceptor bandit torpor meanness egoists mathis. ucibus laces ultrices acned seed.</h2>
             <div className='flex justify-center items-center gap-10'>
                 <div className='image-design'>

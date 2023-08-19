@@ -12,14 +12,13 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const FeaturedProfiles = () => {
     return (
-        <div>
+        <div className='bg-[#FBFAFE] py-10'>
             <div className='text-center'>
                 <h1 className='font-bold text-4xl'>Featured Profiles</h1>
                 <p className='text-lg pt-5 w-3/6 mx-auto'>Aenean at ligula massa. Donec ipsum elit, placenta sed duierrut dapibus semper turpin Fusce nec premium nuns.</p>
             </div>
             <div className='w-4/6  my-10 mx-auto'>
                 <Swiper
-
                     slidesPerView={4}
                     spaceBetween={10}
                     freeMode={true}

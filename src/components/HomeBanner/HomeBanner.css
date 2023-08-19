@@ -1,0 +1,6 @@
+.header-banner {
+    background-image: url(../../assets/images/bgimage.png), url('../../../src/assets/images/Hero.png'), radial-gradient(circle at center, #FFF6FA 0, #F8F0FF);
+    background-position: bottom left, bottom left;
+    background-repeat: no-repeat;
+
+}
